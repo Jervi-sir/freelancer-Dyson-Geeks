@@ -67,7 +67,6 @@ body {
     width: 70%;
     border-radius: 8px;
     box-shadow: 1px 1px 0px #f06946;
-    margin: auto;
     margin-top: 2vh;
 }
 
@@ -187,6 +186,9 @@ footer p {
     }
     main .right .title span {
         justify-content: center;
+    }
+    .btn button {
+        margin: auto;
     }
 }
 
