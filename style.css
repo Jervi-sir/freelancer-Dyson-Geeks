@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+html,
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    background: transparent;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Header */
+
+.right .title {
+    font-family: Poppins, sans-serif;
+    font-size: 3.0vh;
+    line-height: 2vh;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    color: #070302;
+}
+
+.right .title span {
+    display: flex;
+    align-items: center;
+}
+
+.right .text {
+    font-family: Poppins;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    text-align: left;
+}
+
+.btn a {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8vh;
+    line-height: 2.7vh;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    background: inherit;
+}
+
+.btn button {
+    display: block;
+    outline: none;
+    border: none;
+    background: #314161;
+    padding: .5vh 3.2vh;
+    width: 70%;
+    border-radius: 8px;
+    box-shadow: 1px 1px 0px #f06946;
+}
+
+.btn button:hover {
+    background: #d95151;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+footer p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2vh;
+    line-height: 2.3vh;
+    color: #333333;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Structure */
+
+@media only screen and (min-width: 1025px) {
+    body {
+        display: block;
+        height: 100%;
+    }
+    header {
+        height: 25%;
+        width: 20rem;
+    }
+    .middle {
+        height: 70%;
+    }
+    header img {
+        margin-top: 5vh;
+        margin-left: 6vh;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        flex-direction: column;
+    }
+    main .left {
+        width: 50%;
+    }
+    main .left img {
+        transform: translate(50%, 0);
+        height: 100%;
+        width: 30vw;
+    }
+    main .right {
+        display: block;
+        width: 50%;
+    }
+    main .right .title {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
+    main .right .title span {
+        width: 50%;
+    }
+    main .right .text {
+        width: 100%;
+    }
+    main .right .btn {
+        width: 100%;
+    }
+    main .right .title,
+    main .right .text {
+        margin-bottom: 2vh;
+    }
+    main .right .text p {
+        margin-top: 1em;
+    }
+    footer {
+        height: 5%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        padding: 1em;
+    }
+    main .right .title,
+    main .right .text,
+    main .right .btn,
+    main .right .title p {
+        text-align: center;
+        margin-bottom: 4vh;
+    }
+    header,
+    main {
+        margin-bottom: 5vh;
+    }
+    main .right {
+        margin-top: 3vh;
+    }
+    main .right .title {
+        font-size: 5vh;
+        color: black;
+    }
+    main .right .text h3 {
+        margin-bottom: 3vh;
+    }
+    main .right .text {
+        font-size: 5vw;
+    }
+    footer p {
+        font-size: 1.7vh;
+    }
+    main .right .title span {
+        justify-content: center;
+    }
+}
+
+.left {
+    position: relative;
+}
+
+.dinosor {
+    position: absolute;
+    z-index: 999;
+}
+
+
+/* Bubbles */
+
+.bubbles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background: #e9ebef;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -100px;
+    opacity: 0.5;
+    animation: rise 10s infinite ease-in;
+}
+
+.bubble:nth-child(1) {
+    width: 40px;
+    height: 40px;
+    left: 10%;
+    animation-duration: 8s;
+}
+
+.bubble:nth-child(1) img {
+    width: 40px;
+    height: 40px;
+}
+
+.bubble:nth-child(2) {
+    width: 20px;
+    height: 20px;
+    left: 20%;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+.bubble:nth-child(2) img {
+    width: 20px;
+    height: 20px;
+}
+
+.bubble:nth-child(3) {
+    width: 50px;
+    height: 50px;
+    left: 35%;
+    animation-duration: 7s;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(3) img {
+    width: 50px;
+    height: 50px;
+}
+
+.bubble:nth-child(4) {
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    animation-duration: 11s;
+    animation-delay: 0s;
+}
+
+.bubble:nth-child(4) img {
+    width: 60px;
+    height: 60px;
+}
+
+.bubble:nth-child(5) {
+    width: 35px;
+    height: 35px;
+    left: 55%;
+    animation-duration: 6s;
+    animation-delay: 1s;
+}
+
+.bubble:nth-child(5) img {
+    width: 35px;
+    height: 35px;
+}
+
+.bubble:nth-child(6) {
+    width: 45px;
+    height: 45px;
+    left: 65%;
+    animation-duration: 8s;
+    animation-delay: 3s;
+}
+
+.bubble:nth-child(6) img {
+    width: 45px;
+    height: 45px;
+}
+
+.bubble:nth-child(7) {
+    width: 70px;
+    height: 70px;
+    left: 70%;
+    animation-duration: 12s;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(7) img {
+    width: 70px;
+    height: 70px;
+}
+
+.bubble:nth-child(8) {
+    width: 25px;
+    height: 25px;
+    left: 80%;
+    animation-duration: 6s;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(8) img {
+    width: 25px;
+    height: 25px;
+}
+
+.bubble:nth-child(9) {
+    width: 15px;
+    height: 15px;
+    left: 70%;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+.bubble:nth-child(9) img {
+    width: 15px;
+    height: 15px;
+}
+
+.bubble:nth-child(10) {
+    width: 60px;
+    height: 60px;
+    left: 25%;
+    animation-duration: 10s;
+    animation-delay: 4s;
+}
+
+.bubble:nth-child(10) img {
+    width: 60px;
+    height: 60px;
+}
+
+@keyframes rise {
+    0% {
+        bottom: -100px;
+        transform: translateX(0);
+    }
+    50% {
+        transform: translate(100px);
+    }
+    100% {
+        bottom: 1080px;
+        transform: translateX(-200px);
+    }
+}
