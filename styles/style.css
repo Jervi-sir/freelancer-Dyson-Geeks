@@ -67,6 +67,8 @@ body {
     width: 70%;
     border-radius: 8px;
     box-shadow: 1px 1px 0px #f06946;
+    margin: auto;
+    margin-top: 2vh;
 }
 
 .btn button:hover {
@@ -160,6 +162,7 @@ footer p {
     main .right .btn,
     main .right .title p {
         text-align: center;
+        margin-top: 3vh;
         margin-bottom: 4vh;
     }
     header,
