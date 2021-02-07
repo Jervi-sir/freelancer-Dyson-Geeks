@@ -85,9 +85,17 @@
             DysonGeeks.com is an independent forum and is in no way associated with Dyson Limited.
         </p>
     </footer>
+    <script src="anime.min.js"></script>
     <script>
         function load() {
             document.getElementById("backBubble").style.height = document.body.offsetHeight;
+            anime({
+			  targets: '.bubble img',
+			  rotate: function() { return anime.random(-600, 600); },
+			  direction: 'alternate',
+			  loop: true,
+			  easing: 'easeInOutSine'
+			});
         }
     </script>
 </body>
