@@ -31,5 +31,5 @@ a Landing page for DysonGeeks independent forum. requested for its challenge tha
 </div>
 
 ## Contact me 
-[Instagram] (https://www.instagram.com/2kingswebsites/)
+- Instagram (https://www.instagram.com/2kingswebsites/)
 
