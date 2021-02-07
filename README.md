@@ -13,7 +13,7 @@ a Landing page for DysonGeeks independent forum. requested for its challenge tha
   }
   
   .row img {
-    width: 50%;
+    width: 40%;
   }
 </style>
   
