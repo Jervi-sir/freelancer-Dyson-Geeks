@@ -8,6 +8,7 @@ a Landing page for DysonGeeks independent forum. requested for its challenge tha
 <style>
   .row {
     display:flex;
+    width: 100%;
     
   }
   
